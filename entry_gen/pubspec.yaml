@@ -1,0 +1,19 @@
+name: entry_gen
+description: A new Flutter project.
+
+version: 1.0.0+2
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  entry: 
+    path: ../entry/
+  # entry:
+  #   git:
+  #     url: https://github.com/yume190/entry_gen.git
+  #     path: entry
+
+  analyzer: ">=0.37.0 <0.40.0"
+  build: ^1.0.0
+  source_gen: ^0.9.0

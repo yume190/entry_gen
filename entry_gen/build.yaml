@@ -1,0 +1,9 @@
+# Read about `build.yaml` at https://pub.dev/packages/build_config
+builders:
+  entry:
+    import: "package:entry_gen/builder.dart"
+    builder_factories: ["entryBuilder"]
+    build_extensions: {".dart": ["entry.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
