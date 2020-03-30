@@ -17,3 +17,4 @@ dependencies:
   analyzer: ">=0.37.0 <0.40.0"
   build: ^1.0.0
   source_gen: ^0.9.0
+  json_annotation: ^3.0.1

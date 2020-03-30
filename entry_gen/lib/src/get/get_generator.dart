@@ -19,9 +19,15 @@ class GetGenerator {
     return _list.map( (getAnnotation) =>  getAnnotation.gen).toList();
   }
 
+  List<String> get _genedDescription {
+    return _list.map( (getAnnotation) =>  getAnnotation.description).toList();
+  }
+
   /// Get Annotation Count
   int get count => _list.length;
 
   /// the code string, gen by you.
   String get gen => _genedString.join("\n\n");
+
+  String get description => _genedDescription.join("\n///  ");
 }

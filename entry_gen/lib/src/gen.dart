@@ -12,7 +12,7 @@ class EntryGenerator extends GeneratorForAnnotation<Base> {
     if (element is! ClassElement) {
       final name = element.name;
       throw InvalidGenerationSourceError('Generator cannot target `$name`.',
-          todo: 'Remove the Entry2 annotation from `$name`.',
+          todo: 'Remove the Base annotation from `$name`.',
           element: element);
     }
 
@@ -25,6 +25,7 @@ class EntryGenerator extends GeneratorForAnnotation<Base> {
 
     return '''
 /// Get Method: ${getGenerator.count}
+///  ${getGenerator.description}
 class Gen${className} {
   ${getGenerator.gen}
 }
